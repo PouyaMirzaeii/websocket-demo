@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const wss = new WebSocketServer({ server });
 
 // Serve static files from 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'docs')));
 
 wss.on('connection', (ws) => {
   console.log('✅ Client connected');
