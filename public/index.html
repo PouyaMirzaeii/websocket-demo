@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebSocket Live Client</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <h2>WebSocket Messenger</h2>
+      <div id="status-indicator" class="status offline">
+        <span class="status-dot"></span>
+        <span id="status-text">Disconnected</span>
+      </div>
+    </div>
+
+    <div id="messages" class="messages-container"></div>
+
+    <div class="input-group">
+      <input type="text" id="message-input" placeholder="Type a message..." disabled />
+      <button id="send-btn" disabled>Send</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
